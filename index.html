@@ -1,0 +1,2551 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERILYS - Nước Tinh Khiết Cao Cấp | Đạt Chuẩn Quốc Tế | Bảo Vệ Sức Khỏe Gia Đình</title>
+    <meta name="description" content="VERILYS cung cấp nước tinh khiết cao cấp với công nghệ lọc RO 9 bước, đạt chứng nhận quốc tế ISO 22000. Nước uống tinh khiết an toàn cho sức khỏe gia đình Việt.">
+    <meta name="keywords" content="nước tinh khiết, nước uống đóng bình, nước đóng chai, nước sạch, VERILYS, nước uống an toàn, nước tinh khiết tại nhà, mua nước tinh khiết">
+    <meta name="author" content="VERILYS">
+    <meta property="og:title" content="VERILYS - Nước Tinh Khiết Cao Cấp | Đạt Chuẩn Quốc Tế">
+    <meta property="og:description" content="Nước tinh khiết VERILYS với công nghệ lọc RO 9 bước, đảm bảo sức khỏe cho gia đình bạn">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #8fc3f6;
+            --secondary-blue: #93c4ef;
+            --dark-blue: #004c99;
+            --accent-teal: #00bcd4;
+            --light-blue: #e6f2ff;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #333333;
+            --text-gray: #555555;
+            --white: #ffffff;
+            --green: #28a745;
+            --orange: #ff9800;
+            --red: #dc3545;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-gray);
+            background-color: var(--white);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--dark-gray);
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-blue);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        h3 {
+            font-size: 1.6rem;
+            color: var(--dark-blue);
+        }
+        
+        h4 {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+        }
+        
+        .section-title-left h2 {
+            text-align: left;
+        }
+        
+        .section-title-left h2::after {
+            left: 0;
+            transform: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .section-bg-light {
+            background-color: var(--light-gray);
+        }
+        
+        .section-bg-blue {
+            background-color: var(--light-blue);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 12px 28px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-teal);
+        }
+        
+        .btn-accent:hover {
+            background-color: #0097a7;
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+        
+        /* ========== HEADER VỚI LOGO ẢNH THỰC TẾ ========== */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        /* Logo thực tế từ file ảnh */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 100px;
+            width: 150px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0;
+            color: var(--primary-blue);
+        }
+        
+        .logo span {
+            color: var(--accent-teal);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav li {
+            margin-left: 25px;
+        }
+        
+        nav a {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--dark-gray);
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover, nav a.active {
+            color: var(--primary-blue);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-blue);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after, nav a.active::after {
+            width: 100%;
+        }
+        
+        .header-cta {
+            display: flex;
+            align-items: center;
+        }
+        
+        .phone-number {
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-right: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--primary-blue);
+            cursor: pointer;
+        }
+        
+        /* ========== HERO SECTION VỚI ẢNH BÌA THỰC TẾ ========== */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 120vh;
+            min-height: 400px;
+            background-image: url('Bia.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.723);
+            overflow: hidden;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                        rgba(52, 198, 220, 0.85) 0%, 
+                        rgba(83, 151, 219, 0.7) 50%, 
+                        rgba(71, 176, 187, 0.8) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        
+        .hero-container {
+            position: relative;
+            z-index: 3;
+            width: 100%;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+        
+        /* Logo lớn trên hero section */
+        .hero-logo {
+            max-width: 400px;
+            margin: 0 auto 30px;
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.5));
+        }
+        
+        .hero-logo-img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: contain;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.8rem;
+            font-weight: 300;
+            letter-spacing: 6px;
+            margin-bottom: 40px;
+            line-height: 1.4;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+            color: #e6f2ff;
+        }
+        
+        .hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        
+        .hero-feature {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 12px 24px;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .hero-feature:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
+        }
+        
+        .hero-feature i {
+            color: #e0f7fa;
+            font-size: 1.2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--primary-blue);
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--light-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 16px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--white);
+            font-size: 1.5rem;
+            animation: bounce 2s infinite;
+            z-index: 4;
+            cursor: pointer;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            40% {
+                transform: translateY(-10px) translateX(-50%);
+            }
+            60% {
+                transform: translateY(-5px) translateX(-50%);
+            }
+        }
+        
+        /* ========== QUICK ACCESS MENU (3 GẠCH) ========== */
+        .quick-access-menu {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 999;
+        }
+        
+        .menu-toggle {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-blue);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .menu-toggle:hover {
+            background-color: var(--dark-blue);
+            transform: scale(1.1);
+            box-shadow: 0 6px 18px rgba(0, 102, 204, 0.4);
+        }
+        
+        .menu-bar {
+            width: 24px;
+            height: 3px;
+            background-color: var(--white);
+            margin: 3px 0;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-content {
+            position: absolute;
+            top: 0;
+            right: 70px;
+            width: 300px;
+            background-color: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            padding: 20px;
+            transform: translateX(20px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .quick-access-menu.active .menu-content {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .menu-title {
+            color: var(--primary-blue);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--light-blue);
+        }
+        
+        .menu-section {
+            margin-bottom: 20px;
+        }
+        
+        .menu-section h4 {
+            color: var(--dark-blue);
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .menu-section h4 i {
+            margin-right: 8px;
+            font-size: 1rem;
+        }
+        
+        .menu-links {
+            list-style: none;
+        }
+        
+        .menu-links li {
+            margin-bottom: 8px;
+        }
+        
+        .menu-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: all 0.2s ease;
+        }
+        
+        .menu-links a:hover {
+            background-color: var(--light-blue);
+            color: var(--primary-blue);
+            padding-left: 15px;
+        }
+        
+        .menu-links a i {
+            margin-right: 8px;
+            font-size: 0.9rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        /* News Section */
+        .news-highlight {
+            padding: 60px 0 40px;
+            background: linear-gradient(to right, var(--light-blue), var(--light-gray));
+        }
+        
+        .news-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+        
+        .news-badge {
+            display: inline-block;
+            background-color: var(--accent-teal);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .news-date {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .news-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-blue);
+        }
+        
+        .news-excerpt {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+        
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--primary-blue);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+        
+        /* About Us */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+        }
+        
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--light-blue);
+            border-radius: 8px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            display: block;
+            line-height: 1;
+        }
+        
+        .stat-text {
+            font-weight: 600;
+            margin-top: 5px;
+            color: var(--dark-gray);
+        }
+        
+        /* Process & Quality */
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 auto 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .step:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 60%;
+            width: 40%;
+            height: 2px;
+            background-color: var(--medium-gray);
+        }
+        
+        .process-link {
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        /* Comparison */
+        .comparison-table {
+            overflow-x: auto;
+            margin-top: 40px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        th {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            font-weight: 600;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .check-mark {
+            color: var(--green);
+            font-size: 1.2rem;
+        }
+        
+        .x-mark {
+            color: var(--red);
+            font-size: 1.2rem;
+        }
+        
+        /* Products */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .product-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--orange);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-price {
+            color: var(--primary-blue);
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        
+        .product-features {
+            list-style: none;
+            margin: 15px 0;
+        }
+        
+        .product-features li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .product-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: bold;
+        }
+        
+        /* Testimonials */
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 40px auto 0;
+            position: relative;
+        }
+        
+        .testimonial {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 0 15px;
+        }
+        
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .testimonial-content::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 3rem;
+            color: var(--light-blue);
+            font-family: serif;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            background-color: var(--medium-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+        
+        .author-rating {
+            color: var(--orange);
+        }
+        
+        /* News Section */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .news-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .news-card-image {
+            height: 180px;
+            overflow: hidden;
+        }
+        
+        .news-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .news-card:hover .news-card-image img {
+            transform: scale(1.05);
+        }
+        
+        .news-card-content {
+            padding: 20px;
+        }
+        
+        .news-card-date {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .news-card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark-blue);
+        }
+        
+        .news-card-excerpt {
+            margin-bottom: 15px;
+        }
+        
+        /* Purchase Section */
+        .purchase-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .purchase-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border: 2px solid var(--medium-gray);
+            transition: border-color 0.3s ease;
+        }
+        
+        .purchase-card:hover {
+            border-color: var(--primary-blue);
+        }
+        
+        .purchase-card.recommended {
+            border-color: var(--primary-blue);
+            position: relative;
+            transform: scale(1.05);
+        }
+        
+        .recommended-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .purchase-price {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin: 20px 0;
+        }
+        
+        .purchase-price span {
+            font-size: 1rem;
+            font-weight: 400;
+            color: var(--text-gray);
+        }
+        
+        .purchase-features {
+            list-style: none;
+            margin: 20px 0 30px;
+            text-align: left;
+        }
+        
+        .purchase-features li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .purchase-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--green);
+            font-weight: bold;
+        }
+        
+        /* Contact */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            margin-top: 40px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            list-style: none;
+            margin-top: 30px;
+        }
+        
+        .contact-details li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-details i {
+            font-size: 1.2rem;
+            color: var(--primary-blue);
+            margin-right: 15px;
+            width: 20px;
+        }
+        
+        .contact-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .contact-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--medium-gray);
+            border-radius: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+        }
+        
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo h2 {
+            color: var(--white);
+            text-align: left;
+        }
+        
+        .footer-logo h2::after {
+            display: none;
+        }
+        
+        .footer-links h3, .footer-newsletter h3 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-teal);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent-teal);
+        }
+        
+        .footer-newsletter form {
+            display: flex;
+            margin-top: 15px;
+        }
+        
+        .footer-newsletter input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        
+        .footer-newsletter button {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            padding: 0 20px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* ========== RESPONSIVE DESIGN ========== */
+        @media (max-width: 1200px) {
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.5rem;
+                letter-spacing: 4px;
+            }
+            
+            .quick-access-menu {
+                right: 15px;
+            }
+        }
+        
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero-section {
+                height: 75vh;
+                min-height: 500px;
+            }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.3rem;
+                letter-spacing: 3px;
+            }
+            
+            .hero-logo {
+                max-width: 300px;
+            }
+            
+            .hero-features {
+                gap: 20px;
+            }
+            
+            .hero-feature {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            
+            .quick-access-menu {
+                display: none; /* Ẩn trên tablet */
+            }
+            
+            .purchase-card.recommended {
+                transform: none;
+            }
+            
+            .step:not(:last-child)::after {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                height: 70vh;
+                min-height: 450px;
+            }
+            
+            .hero-title {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+            
+            .hero-logo {
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+            
+            .hero-features {
+                gap: 15px;
+            }
+            
+            .hero-feature {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 300px;
+                padding: 14px 30px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav ul {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                transition: all 0.3s ease;
+                z-index: 999;
+            }
+            
+            nav.active ul {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+            nav li {
+                margin: 15px 0;
+            }
+            
+            .header-cta .phone-number {
+                display: none;
+            }
+            
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            .hero-section {
+                height: 65vh;
+                min-height: 400px;
+            }
+            
+            .hero-title {
+                font-size: 1.8rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+            
+            .hero-logo {
+                max-width: 200px;
+            }
+            
+            .hero-features {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .news-title {
+                font-size: 1.4rem;
+            }
+            
+            .purchase-options {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== QUICK ACCESS MENU (3 GẠCH) ========== -->
+    <div class="quick-access-menu" id="quickAccessMenu">
+        <div class="menu-toggle" id="menuToggle">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <div class="menu-content">
+            <h3 class="menu-title">Truy Cập Nhanh</h3>
+            
+            <div class="menu-section">
+                <h4><i class="fas fa-building"></i> Thương Hiệu</h4>
+                <ul class="menu-links">
+                    <li><a href="our-story.html" target="_blank"><i class="fas fa-book-open"></i> Câu Chuyện Của Chúng Tôi</a></li>
+                    <li><a href="our-history.html" target="_blank"><i class="fas fa-history"></i> Lịch Sử Hình Thành</a></li>
+                    <li><a href="sustainability.html" target="_blank"><i class="fas fa-leaf"></i> Phát Triển Bền Vững</a></li>
+                    <li><a href="certifications.html" target="_blank"><i class="fas fa-certificate"></i> Chứng Nhận & Giải Thưởng</a></li>
+                    <li><a href="corporate-values.html" target="_blank"><i class="fas fa-handshake"></i> Giá Trị Cốt Lõi</a></li>
+                </ul>
+            </div>
+            
+            <div class="menu-section">
+                <h4><i class="fas fa-box"></i> Sản Phẩm</h4>
+                <ul class="menu-links">
+                    <li><a href="production-process.html" target="_blank"><i class="fas fa-cogs"></i> Quy Trình Sản Xuất</a></li>
+                    <li><a href="product-types.html" target="_blank"><i class="fas fa-tint"></i> Các Loại Sản Phẩm</a></li>
+                    <li><a href="technology.html" target="_blank"><i class="fas fa-microscope"></i> Công Nghệ Lọc RO</a></li>
+                    <li><a href="mineral-water.html" target="_blank"><i class="fas fa-flask"></i> Nước Khoáng Tự Nhiên</a></li>
+                    <li><a href="special-products.html" target="_blank"><i class="fas fa-star"></i> Sản Phẩm Đặc Biệt</a></li>
+                </ul>
+            </div>
+            
+            <div class="menu-section">
+                <h4><i class="fas fa-info-circle"></i> Thông Tin</h4>
+                <ul class="menu-links">
+                    <li><a href="water-quality.html" target="_blank"><i class="fas fa-check-circle"></i> Chất Lượng Nước</a></li>
+                    <li><a href="health-benefits.html" target="_blank"><i class="fas fa-heart"></i> Lợi Ích Sức Khỏe</a></li>
+                    <li><a href="environmental-impact.html" target="_blank"><i class="fas fa-globe-asia"></i> Tác Động Môi Trường</a></li>
+                    <li><a href="faq.html" target="_blank"><i class="fas fa-question-circle"></i> Câu Hỏi Thường Gặp</a></li>
+                    <li><a href="research.html" target="_blank"><i class="fas fa-graduation-cap"></i> Nghiên Cứu Khoa Học</a></li>
+                </ul>
+            </div>
+            
+            <div class="menu-section">
+                <h4><i class="fas fa-users"></i> Dịch Vụ</h4>
+                <ul class="menu-links">
+                    <li><a href="delivery.html" target="_blank"><i class="fas fa-truck"></i> Giao Hàng & Vận Chuyển</a></li>
+                    <li><a href="subscription.html" target="_blank"><i class="fas fa-calendar-alt"></i> Đăng Ký Thành Viên</a></li>
+                    <li><a href="corporate-services.html" target="_blank"><i class="fas fa-building"></i> Dịch Vụ Doanh Nghiệp</a></li>
+                    <li><a href="maintenance.html" target="_blank"><i class="fas fa-tools"></i> Bảo Trì & Hỗ Trợ</a></li>
+                    <li><a href="customer-care.html" target="_blank"><i class="fas fa-headset"></i> Chăm Sóc Khách Hàng</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header với logo ảnh thực tế -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo ảnh thực tế từ file thứ 2 (xóa nền) -->
+                <img src="logo.png" alt="VERILYS Logo" class="logo-img">
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#hero" class="active">Trang chủ</a></li>
+                    <li><a href="#why-choose">Lý do chọn</a></li>
+                    <li><a href="#about">Về chúng tôi</a></li>
+                    <li><a href="#process">Quy trình</a></li>
+                    <li><a href="#products">Sản phẩm</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-cta">
+                <div class="phone-number">
+                    <i class="fas fa-phone"></i> 092 893 09 30
+                </div>
+                <a href="#purchase" class="btn btn-accent">Đặt hàng ngay</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== HERO SECTION VỚI ẢNH BÌA THỰC TẾ ========== -->
+    <section class="hero-section" id="hero">
+        <!-- Ở đây sử dụng background-image với ảnh thực tế -->
+        
+        <div class="hero-overlay">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <!-- Logo lớn trên hero section -->
+                    <div class="hero-logo">
+                        <!-- Logo ảnh thực tế từ file thứ 2 (xóa nền) -->
+                    </div>
+                    
+                    <h1 class="hero-title">Nước Tinh Khiết Cao Cấp</h1>
+                    <p class="hero-subtitle">Chuẩn Quốc Tế - An Toàn Tuyệt Đối Cho Sức Khỏe Gia Đình Bạn</p>
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Công nghệ lọc RO 9 bước</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Chứng nhận ISO 22000:2018</span>
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Giao hàng miễn phí 2h</span>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#purchase" class="btn btn-primary">Đặt hàng ngay</a>
+                        <a href="#about" class="btn btn-secondary">Tìm hiểu thêm</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#news" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- 1. Thông tin báo chí mở đầu -->
+    <section class="news-highlight" id="news">
+        <div class="news-container">
+            <span class="news-badge">TIN NỔI BẬT</span>
+            <span class="news-date"><i class="far fa-calendar-alt"></i> 01/02/2020</span>
+            <h2 class="news-title">VERILYS đạt chứng nhận ISO 22000:2018 về an toàn thực phẩm</h2>
+            <p class="news-excerpt">Sau quá trình đánh giá nghiêm ngặt, thương hiệu nước tinh khiết VERILYS đã chính thức được cấp chứng nhận ISO 22000:2018 - Hệ thống quản lý an toàn thực phẩm...</p>
+            
+            <div class="news-full-content" id="fullContent1">
+                <p>Đây là minh chứng cho cam kết mang đến sản phẩm nước uống chất lượng cao, an toàn tuyệt đối cho sức khỏe người tiêu dùng Việt Nam. Quy trình đánh giá kéo dài 6 tháng với sự tham gia của các chuyên gia quốc tế.</p>
+                
+                <h3>Ý nghĩa của chứng nhận ISO 22000:2018</h3>
+                <p>ISO 22000:2018 là tiêu chuẩn quốc tế về hệ thống quản lý an toàn thực phẩm, được công nhận toàn cầu. Việc đạt được chứng nhận này chứng tỏ VERILYS có:</p>
+                <ul>
+                    <li>Hệ thống quản lý an toàn thực phẩm toàn diện</li>
+                    <li>Quy trình kiểm soát nghiêm ngặt từ nguyên liệu đến thành phẩm</li>
+                    <li>Khả năng truy xuất nguồn gốc sản phẩm</li>
+                    <li>Đội ngũ nhân viên được đào tạo bài bản</li>
+                </ul>
+                
+                <h3>Cam kết của VERILYS</h3>
+                <p>Với chứng nhận này, VERILYS cam kết tiếp tục duy trì và nâng cao chất lượng sản phẩm, đảm bảo mỗi giọt nước tinh khiết đều an toàn cho người sử dụng. Chúng tôi sẽ không ngừng cải tiến công nghệ và quy trình sản xuất để mang đến những sản phẩm tốt nhất.</p>
+                
+                <p>Việc đạt chứng nhận ISO 22000:2018 cũng mở ra cơ hội cho VERILYS xuất khẩu sản phẩm ra thị trường quốc tế, góp phần đưa thương hiệu nước tinh khiết Việt Nam vươn tầm thế giới.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Lý do chọn nước tinh khiết VERILYS -->
+    <section class="section-padding" id="why-choose">
+        <div class="container">
+            <h2>TẠI SAO NÊN CHỌN NƯỚC TINH KHIẾT VERILYS?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Công nghệ lọc RO 9 bước</h3>
+                    <p>Hệ thống lọc thẩm thấu ngược RO với 9 cấp lọc tiên tiến, loại bỏ 99.99% vi khuẩn, virus, kim loại nặng và tạp chất có hại.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Đạt chuẩn quốc tế</h3>
+                    <p>Được cấp chứng nhận ISO 22000:2018, ISO 9001:2015 và đạt tiêu chuẩn nước uống trực tiếp của Bộ Y tế Việt Nam.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Thân thiện môi trường</h3>
+                    <p>Sử dụng chai nhựa PET tái chế, thân thiện với môi trường. Chúng tôi cam kết thu gom và tái chế 100% vỏ chai.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Giao hàng nhanh chóng</h3>
+                    <p>Miễn phí giao hàng trong vòng 2 giờ tại nội thành. Hỗ trợ lắp đặt, vệ sinh máy và thay thế miễn phí.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Kiểm định thường xuyên</h3>
+                    <p>Mỗi lô sản phẩm đều được kiểm định chất lượng tại phòng lab đạt chuẩn trước khi đưa ra thị trường.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Giá cả hợp lý</h3>
+                    <p>Nhiều chương trình ưu đãi, chiết khấu cho khách hàng thân thiết, văn phòng, trường học và bệnh viện.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Về chúng tôi -->
+    <section class="section-padding section-bg-light" id="about">
+        <div class="container">
+            <div class="section-title-left">
+                <h2>VỀ THƯƠNG HIỆU VERILYS</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Thành lập từ năm 2010, <strong>VERILYS</strong> đã khẳng định vị thế là một trong những thương hiệu nước tinh khiết hàng đầu tại Việt Nam. Với sứ mệnh "Mang đến nguồn nước tinh khiết an toàn nhất cho mọi gia đình Việt", chúng tôi không ngừng nỗ lực nghiên cứu và cải tiến công nghệ.</p>
+                    <p>Nhà máy sản xuất của VERILYS được xây dựng trên diện tích 10.000m² tại Khu công nghiệp công nghệ cao, áp dụng dây chuyền sản xuất tự động hóa 100% từ khâu xử lý nước đến đóng chai, đảm bảo vô trùng tuyệt đối.</p>
+                    <p>Đội ngũ chuyên gia giàu kinh nghiệm cùng hệ thống phân phối rộng khắp 34 tỉnh thành, VERILYS cam kết mang đến sự hài lòng tuyệt đối cho khách hàng thông qua chất lượng sản phẩm và dịch vụ vượt trội.</p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">7+</span>
+                            <span class="stat-text">Công nghệ lọc</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500K+</span>
+                            <span class="stat-text">Khách hàng tin dùng</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">34</span>
+                            <span class="stat-text">Tỉnh thành phủ sóng</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-text">Hài lòng khách hàng</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="nha-may.jpg" style="width:150%; border-radius:10px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Quy trình sản xuất và chất lượng -->
+    <section class="section-padding" id="process">
+        <div class="container">
+            <h2>QUY TRÌNH SẢN XUẤT VÀ KIỂM SOÁT CHẤT LƯỢNG</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Tiền xử lý</h3>
+                    <p>Lọc thô loại bỏ tạp chất, cặn bẩn kích thước lớn từ nguồn nước ngầm</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Lọc than hoạt tính</h3>
+                    <p>Khử mùi, màu, chất hữu cơ và clo dư trong nước</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Lọc tinh 5μm</h3>
+                    <p>Loại bỏ các tạp chất có kích thước siêu nhỏ đến 5 micromet</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Thẩm thấu ngược RO</h3>
+                    <p>Công nghệ lọc RO loại bỏ 99.9% vi khuẩn, virus, kim loại nặng</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <h3>Khử khuẩn UV</h3>
+                    <p>Tiệt trùng bằng tia cực tím công nghệ cao, diệt khuẩn tận gốc</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <h3>Bổ sung khoáng</h3>
+                    <p>Cân bằng khoáng chất có lợi cho sức khỏe: Ca, Mg, K, Na</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <h3>Đóng chai tự động</h3>
+                    <p>Đóng gói trong môi trường vô trùng lớp 100</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">8</div>
+                    <h3>Kiểm định chất lượng</h3>
+                    <p>Kiểm tra mẫu ngẫu nhiên tại phòng lab đạt chuẩn</p>
+                </div>
+            </div>
+            
+            <div class="process-link">
+                <a href="https://verilysro.lovable.app" class="btn btn-outline">
+                    <i class="fas fa-info-circle"></i> Chi tiết hơn về quy trình sản xuất
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. So sánh với thương hiệu khác -->
+    <section class="section-padding section-bg-blue" id="comparison">
+        <div class="container">
+            <h2>SO SÁNH VERILYS VỚI CÁC THƯƠNG HIỆU KHÁC</h2>
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TIÊU CHÍ</th>
+                            <th>VERILYS</th>
+                            <th>Lavie (Viva)</th>
+                            <th>ViVa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Công nghệ lọc</td>
+                            <td>RO 9 bước + UV</td>
+                            <td>RO 7 bước</td>
+                            <td>RO 5 bước</td>
+                        </tr>
+                        <tr>
+                            <td>Chứng nhận ISO 22000</td>
+                            <td><i class="fas fa-check check-mark"></i> Có</td>
+                            <td><i class="fas fa-check check-mark"></i> Có</td>
+                            <td><i class="fas fa-times x-mark"></i> Không</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểm định hàng tháng</td>
+                            <td><i class="fas fa-check check-mark"></i> Có</td>
+                            <td><i class="fas fa-check check-mark"></i> Có</td>
+                            <td><i class="fas fa-check check-mark"></i> Có(1 số cơ sở)</td>
+                        </tr>
+                        <tr>
+                            <td>Bổ sung khoáng chất</td>
+                            <td><i class="fas fa-check check-mark"></i> 4 loại</td>
+                            <td><i class="fas fa-check check-mark"></i> 1 - 2 loại</td>
+                            <td><i class="fas fa-times x-mark"></i> Không</td>
+                        </tr>
+                        <tr>
+                            <td>Giá bình 1000ml</td>
+                            <td>35.000đ</td>
+                            <td>15.000đ</td>
+                            <td>10.000đ</td>
+                        </tr>
+                        <tr>
+                            <td>Giao hàng miễn phí</td>
+                            <td><i class="fas fa-check check-mark"></i> Có</td>
+                            <td><i class="fas fa-times x-mark"></i> Không</td>
+                            <td><i class="fas fa-check check-mark"></i> Có</td>
+                        </tr>
+                        <tr>
+                            <td>Chính sách đổi trả</td>
+                            <td>48 giờ</td>
+                            <td>24 giờ</td>
+                            <td>Không</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Sản phẩm tiêu biểu -->
+    <section class="section-padding" id="products">
+        <div class="container">
+            <h2>SẢN PHẨM NƯỚC TINH KHIẾT VERILYS</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="1000ml.jpg" alt="Nước tinh khiết VERILYS đóng bình 1000ml">
+                        <div class="product-badge">BÁN CHẠY</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nước tinh khiết bình 1000ml</h3>
+                        <p>Phù hợp cho gia đình, văn phòng công ty. Sử dụng công nghệ kháng khuẩn Nano Silver.</p>
+                        <div class="product-price">450.000 VNĐ / bình</div>
+                        <ul class="product-features">
+                            <li>Dùng cho văn phòng, gia đình</li>
+                            <li>Công nghệ kháng khuẩn Nano Silver</li>
+                            <li>Đảm bảo vô trùng 100%</li>
+                        </ul>
+                        <a href="#purchase" class="btn" style="width: 100%; text-align: center;">Đặt hàng ngay</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="chai 500ml.jpg" alt="Nước tinh khiết VERILYS đóng chai 500ml">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nước tinh khiết chai 500ml</h3>
+                        <p>Tiện lợi mang theo khi đi học, đi làm, du lịch với thiết kế chai thân thiện môi trường.</p>
+                        <div class="product-price">250.000 VNĐ / chai</div>
+                        <ul class="product-features">
+                            <li>Thiết kế tiện lợi, dễ mang theo</li>
+                            <li>Vật liệu PET tái chế</li>
+                            <li>Nắp chai chống rò rỉ</li>
+                        </ul>
+                        <a href="#purchase" class="btn" style="width: 100%; text-align: center;">Đặt hàng ngay</a>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="350ml.jpg" alt="Nước tinh khiết VERILYS đóng chai 350ml">
+                    </div>
+                    <div class="product-info">
+                        <h3>Nước tinh khiết chai 350ml</h3>
+                        <p>Thiết kế nhỏ gọn, dễ dàng sử dụng cho trẻ em và người cao tuổi, đảm bảo vệ sinh.</p>
+                        <div class="product-price">90.000 VNĐ / chai</div>
+                        <ul class="product-features">
+                            <li>Thiết kế nhỏ gọn</li>
+                            <li>Phù hợp trẻ em, người già</li>
+                            <li>Dễ dàng cầm nắm</li>
+                        </ul>
+                        <a href="#purchase" class="btn" style="width: 100%; text-align: center;">Đặt hàng ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Đánh giá của người dùng -->
+    <style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#e8f9ff,#ffffff);
+}
+
+.section-padding{
+    padding:60px 0;
+}
+
+h2{
+    text-align:center;
+    color:#0bbcd6;
+    margin-bottom:40px;
+    letter-spacing:1px;
+}
+
+.testimonials-container{
+    perspective:1200px;
+    max-width:900px;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.testimonials-track{
+    display:flex;
+    transition:transform 0.8s ease;
+}
+
+.testimonial{
+    min-width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.card{
+    width:80%;
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 25px 50px rgba(0,0,0,0.15);
+    transform-style:preserve-3d;
+    transition:all 0.8s ease;
+    opacity:0.4;
+    transform:scale(0.8) rotateY(15deg);
+}
+
+.testimonial.active .card{
+    opacity:1;
+    transform:scale(1) rotateY(0deg);
+}
+
+.testimonial.prev .card{
+    transform:scale(0.75) rotateY(-20deg);
+}
+
+.testimonial.next .card{
+    transform:scale(0.75) rotateY(20deg);
+}
+
+.testimonial-content{
+    font-size:16px;
+    line-height:1.7;
+    color:#333;
+    margin-bottom:20px;
+}
+
+.testimonial-author{
+    display:flex;
+    align-items:center;
+}
+
+.author-avatar{
+    width:55px;
+    height:55px;
+    background:#0bbcd6;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    font-size:24px;
+    margin-right:15px;
+}
+
+.author-info h4{
+    margin:0;
+    font-size:16px;
+}
+
+.author-info p{
+    margin:2px 0;
+    font-size:14px;
+    color:#777;
+}
+
+.author-rating{
+    color:#ffc107;
+}
+
+/* Nút điều hướng */
+.nav-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:#0bbcd6;
+    color:#fff;
+    border:none;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.nav-btn.prev{ left:15px; }
+.nav-btn.next{ right:15px; }
+
+.nav-btn:hover{
+    background:#099bb3;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .card{ width:90%; }
+}
+</style>
+</head>
+
+<body>
+
+<section class="section-padding" id="testimonials">
+    <h2>ĐÁNH GIÁ TỪ KHÁCH HÀNG VERILYS</h2>
+
+    <div class="testimonials-container">
+        <button class="nav-btn prev">‹</button>
+
+        <div class="testimonials-track">
+            <div class="testimonial active">
+                <div class="card">
+                    <div class="testimonial-content">
+                        Tôi đã sử dụng nước tinh khiết VERILYS hơn 3 năm. Nước rất trong, vị dễ uống và cực kỳ an tâm cho cả gia đình.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Chị Nguyễn Thị Hương</h4>
+                            <p>Nhân viên văn phòng</p>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial next">
+                <div class="card">
+                    <div class="testimonial-content">
+                        Gia đình tôi có trẻ nhỏ nên rất kỹ trong việc chọn nước uống. VERILYS khiến tôi hoàn toàn yên tâm.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Anh Trần Minh Tuấn</h4>
+                            <p>Kỹ sư</p>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="card">
+                    <div class="testimonial-content">
+                        Dịch vụ giao nước VERILYS cho công ty rất đúng giờ, nhân viên thân thiện, chất lượng ổn định.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Chị Lê Thu Trang</h4>
+                            <p>Quản lý</p>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="card">
+                    <div class="testimonial-content">
+                        Sau khi đổi sang VERILYS, tôi thấy nước uống ngon hơn hẳn, không có mùi clo.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Anh Phạm Quốc Khánh</h4>
+                            <p>Chủ cửa hàng</p>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="card">
+                    <div class="testimonial-content">
+                        Giá hợp lý, chất lượng tốt, giao hàng nhanh – VERILYS là lựa chọn tôi dùng lâu dài.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Cô Đặng Thị Mai</h4>
+                            <p>Nội trợ</p>
+                            <div class="author-rating">★★★★★</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav-btn next">›</button>
+    </div>
+</section>
+
+<script>
+const track = document.querySelector('.testimonials-track');
+const slides = document.querySelectorAll('.testimonial');
+const nextBtn = document.querySelector('.nav-btn.next');
+const prevBtn = document.querySelector('.nav-btn.prev');
+
+let index = 0;
+
+function updateSlide(){
+    slides.forEach((slide,i)=>{
+        slide.classList.remove('active','prev','next');
+        if(i === index) slide.classList.add('active');
+        else if(i === index - 1 || (index === 0 && i === slides.length - 1)) slide.classList.add('prev');
+        else if(i === index + 1 || (index === slides.length - 1 && i === 0)) slide.classList.add('next');
+    });
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
+
+nextBtn.onclick = () =>{
+    index = (index + 1) % slides.length;
+    updateSlide();
+};
+
+prevBtn.onclick = () =>{
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlide();
+};
+
+// Auto slide
+setInterval(()=>{
+    index = (index + 1) % slides.length;
+    updateSlide();
+},5000);
+</script>
+
+    <!-- 8. Tin tức -->
+    <section class="section-padding" id="news-section">
+        <div class="container">
+            <h2>TIN TỨC VỀ NƯỚC TINH KHIẾT VÀ SỨC KHỎE</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="uong nuoc.jpg" alt="Uống đủ nước mỗi ngày">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-card-date">02/02/2026</span>
+                        <h3 class="news-card-title">Lợi ích của việc uống đủ nước tinh khiết mỗi ngày</h3>
+                        <p class="news-card-excerpt">Nước tinh khiết đóng vai trò quan trọng trong việc duy trì sức khỏe. Bài viết này sẽ cung cấp thông tin về lợi ích của việc uống đủ nước mỗi ngày.</p>
+                        <a href="https://loi-ich-verilys.lovable.app" class="btn btn-outline">
+    Đọc tiếp
+</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="lich su.avif" alt="Lich su hinh thanh">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-card-date">05/02/2026</span>
+                        <h3 class="news-card-title">Lịch sử hình thành Verilys Khởi nguồn từ năm 2010</h3>
+                        <p class="news-card-excerpt">Hành trình xây dựng thương hiệu nước uống tinh khiết dựa trên chất lượng, công nghệ và sự minh bạch.</p>
+                        <a href="https://verilys-story.vercel.app/" class="btn btn-outline">Đọc tiếp</a>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="tinh khiet.jpg" alt="Chọn nước tinh khiết an toàn">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-card-date">09/02/2026</span>
+                        <h3 class="news-card-title">Nước chiếm bao nhiêu % cơ thể bạn?</h3>
+                        <p class="news-card-excerpt">Nước không chỉ là thức uống giải khát mà nó là nguồn sống nuôi dưỡng từng tế bào. Khám phá sự thật thú vị về vai trò của nước đối với sức khỏe của bạn...</p>
+                        <a href="https://ghostwriter-chat--dungnguyentan07.replit.app" class="btn btn-outline">Đọc tiếp</a>
+                    </div>
+                    </div>
+                    <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="tap the.jpg" alt="Chọn nước tinh khiết an toàn">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-card-date">12/02/2026</span>
+                        <h3 class="news-card-title">Verilys tặng nước lực lượng tuyến đầu chống dịch Covid-19</h3>
+                        <p class="news-card-excerpt">Trong bối cảnh dịch Covid-19 diễn biến phức tạp và Thành phố Hà Nội thực hiện giãn cách xã hội theo Chỉ thị 16, thương hiệu nước tinh khiết Verilys...</p>
+                        <a href="https://bttduong1434-code.github.io/Covid-19/" class="btn btn-outline">
+    Đọc tiếp
+</a>
+                    </div>
+                    </div>
+                    <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="bao ve.jpg" alt="Bảo vệ môi trường">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-card-date">15/02/2026</span>
+                        <h3 class="news-card-title">Nước là khởi nguồn của sự sống</h3>
+                        <p class="news-card-excerpt">Nước là khởi nguồn của sự sống, là yếu tố cốt lõi duy trì mọi hệ sinh thái và quyết định sự phát triển bền vững của nhân loại. Từ những dòng sông,...</p>
+                        <a href="https://verilys-story.vercel.app/" class="btn btn-outline">Đọc tiếp</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-card-image">
+                        <img src="uong nuoc1.jpg" alt="An toàn vệ sinh thực phẩm">
+                    </div>
+                    <div class="news-card-content">
+                        <span class="news-card-date">19/02/2026</span>
+                        <h3 class="news-card-title">Uống bao nhiêu nước mỗi ngày là đủ?</h3>
+                        <p class="news-card-excerpt">Nước chiếm khoảng 60-70% trọng lượng cơ thể người trưởng thành và đóng vai trò thiết yếu trong mọi chức năng sinh lý...</p>
+                        <a href="https://kerlzoid.github.io/webcanhan1/" class="btn btn-outline">Đọc tiếp</a>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Mục mua hàng -->
+    <section class="section-padding section-bg-blue" id="purchase">
+        <div class="container">
+            <h2>CHƯƠNG TRÌNH ƯU ĐÃI ĐẶT HÀNG</h2>
+            <div class="purchase-options">
+                <div class="purchase-card">
+                    <h3>Gói Cá Nhân</h3>
+                    <p>Phù hợp cho bản thân</p>
+                    <div class="purchase-price">499.000đ <span>/bình 1000ml</span></div>
+                    <ul class="purchase-features">
+                        <li>Giao hàng miễn phí</li>
+                        <li>Đặt tối thiểu 2 bình/tháng</li>
+                        <li>Hỗ trợ đổi bình miễn phí</li>
+                        <li>Tặng 2 chai 500ml</li>
+                    </ul>
+                    <a href="#contact" class="btn" style="width: 100%;">Đăng ký ngay</a>
+                </div>
+                
+                <div class="purchase-card recommended">
+                    <div class="recommended-badge">ƯU ĐÃI TỐT NHẤT</div>
+                    <h3>Gói Gia Đình</h3>
+                    <p>Phù hợp cho gia đình</p>
+                    <div class="purchase-price">649.000đ <span>/bình 1000ml</span></div>
+                    <ul class="purchase-features">
+                        <li>Giao hàng miễn phí</li>
+                        <li>Đặt tối thiểu 4 bình/tháng</li>
+                        <li>Hỗ trợ đổi bình miễn phí</li>
+                        <li>Tặng 3 chai 500ml</li>
+                        <li>Miễn phí vệ sinh máy lọc nước</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-accent" style="width: 100%;">Đăng ký ngay</a>
+                </div>
+                
+                <div class="purchase-card">
+                    <h3>Gói Văn Phòng</h3>
+                    <p>Phù hợp cho công ty</p>
+                    <div class="purchase-price">759.000đ <span>/bình 500ml</span></div>
+                    <ul class="purchase-features">
+                        <li>Giao hàng miễn phí</li>
+                        <li>Đặt tối thiểu 10 bình/tháng</li>
+                        <li>Hỗ trợ đổi bình miễn phí</li>
+                        <li>Tặng bình nóng lạnh</li>
+                        <li>Thanh toán cuối tháng</li>
+                    </ul>
+                    <a href="#contact" class="btn" style="width: 100%;">Đăng ký ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Liên hệ -->
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <h2>LIÊN HỆ VỚI VERILYS</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Thông tin liên hệ</h3>
+                    <p>Chúng tôi luôn sẵn sàng hỗ trợ và tư vấn miễn phí về sản phẩm nước tinh khiết VERILYS. Liên hệ ngay để được phục vụ tốt nhất.</p>
+                    
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Trụ sở chính:</strong><br>
+                                Hà Nội
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Hotline đặt hàng:</strong><br>
+                                1900.123.456 (Miễn phí 24/7)
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                verilys.tmu@gmail.com
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Giờ làm việc:</strong><br>
+                                Thứ 2 - Chủ nhật: 7:00 - 21:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Đăng ký nhận tư vấn</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="package">Gói quan tâm</label>
+                            <select id="package" name="package">
+                                <option value="personal">Gói Cá Nhân</option>
+                                <option value="family">Gói Gia Đình</option>
+                                <option value="office">Gói Văn Phòng</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội dung yêu cầu</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Gửi yêu cầu tư vấn</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>VERI<span>LYS</span></h2>
+                    <p>Nước tinh khiết cao cấp - Bảo vệ sức khỏe gia đình bạn</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1AmDxqz1pD/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="#hero">Trang chủ</a></li>
+                        <li><a href="#why-choose">Lý do chọn VERILYS</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#process">Quy trình sản xuất</a></li>
+                        <li><a href="#products">Sản phẩm</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách vận chu
+                            yển</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Đăng ký nhận tin</h3>
+                    <p>Nhận thông tin khuyến mãi và tin tức mới nhất từ VERILYS</p>
+                    <form>
+                        <input type="email" placeholder="Email của bạn">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 VERILYS - Nước tinh khiết cao cấp. Tổ 2</p>
+                <p></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ========== QUICK ACCESS MENU TOGGLE ==========
+        const quickAccessMenu = document.getElementById('quickAccessMenu');
+        const menuToggle = document.getElementById('menuToggle');
+        
+        menuToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            quickAccessMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!quickAccessMenu.contains(e.target)) {
+                quickAccessMenu.classList.remove('active');
+            }
+        });
+        
+        // ========== HEADER SCROLL EFFECT ==========
+        function handleHeaderScroll() {
+            const header = document.querySelector('header');
+            const heroSection = document.getElementById('hero');
+            const heroHeight = heroSection.offsetHeight;
+            
+            if (window.scrollY > heroHeight * 0.7) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
+        
+        // ========== MOBILE MENU TOGGLE ==========
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', function() {
+            mainNav.classList.toggle('active');
+            
+            // Change icon
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (mainNav.classList.contains('active')) {
+                    mainNav.classList.remove('active');
+                    
+                    // Reset menu icon
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+        });
+        
+        // ========== CONTACT FORM SUBMISSION ==========
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const package = document.getElementById('package').value;
+            
+            // Simple validation
+            if (!name || !phone) {
+                alert('Vui lòng nhập đầy đủ họ tên và số điện thoại.');
+                return;
+            }
+            
+            // In a real application, this would send data to a server
+            alert(`Cảm ơn ${name}! VERILYS sẽ liên hệ với bạn qua số ${phone} trong vòng 15 phút để tư vấn về ${getPackageName(package)}.`);
+            
+            // Reset form
+            contactForm.reset();
+        });
+        
+        function getPackageName(value) {
+            switch(value) {
+                case 'personal': return 'Gói Cá Nhân';
+                case 'family': return 'Gói Gia Đình';
+                case 'office': return 'Gói Văn Phòng';
+                default: return 'sản phẩm';
+            }
+        }
+        
+        // ========== SMOOTH SCROLLING ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ========== ACTIVE NAV LINK ON SCROLL ==========
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let currentSectionId = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Handle header scroll effect
+            handleHeaderScroll();
+        });
+        
+        // ========== HERO SECTION ANIMATION ==========
+        function animateHeroSection() {
+            const heroSection = document.querySelector('.hero-section');
+            const heroTitle = document.querySelector('.hero-title');
+            const heroSubtitle = document.querySelector('.hero-subtitle');
+            const heroLogo = document.querySelector('.hero-logo');
+            
+            // Add hover effect for hero section
+            heroSection.addEventListener('mouseenter', function() {
+                heroTitle.style.textShadow = '3px 3px 12px rgba(0, 0, 0, 0.9)';
+                heroSubtitle.style.letterSpacing = '8px';
+                heroLogo.style.transform = 'scale(1.05)';
+            });
+            
+            heroSection.addEventListener('mouseleave', function() {
+                heroTitle.style.textShadow = '2px 2px 8px rgba(0, 0, 0, 0.7)';
+                heroSubtitle.style.letterSpacing = '6px';
+                heroLogo.style.transform = 'scale(1)';
+            });
+        }
+        
+        // ========== CHANGE IMAGE FUNCTION ==========
+        function changeLogoImage(logoUrl, heroLogoUrl) {
+            const logoImg = document.querySelector('.logo-img');
+            const heroLogoImg = document.querySelector('.hero-logo-img');
+            
+            if (logoUrl) logoImg.src = logoUrl;
+            if (heroLogoUrl) heroLogoImg.src = heroLogoUrl;
+        }
+        
+        function changeBackgroundImage(imageUrl) {
+            const heroSection = document.querySelector('.hero-section');
+            heroSection.style.backgroundImage = `url('${imageUrl}')`;
+        }
+        
+        // ========== INITIALIZE ON LOAD ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize header scroll effect
+            handleHeaderScroll();
+            
+            // Add scroll listener for header
+            window.addEventListener('scroll', handleHeaderScroll);
+            
+            // Animate hero section
+            animateHeroSection();
+            
+            // Create sample pages data
+            createSamplePages();
+        });
+        
+        // ========== CREATE SAMPLE PAGES FUNCTION ==========
+        function createSamplePages() {
+            // Tạo nội dung mẫu cho các trang liên kết
+            const pages = {
+                'our-story.html': {
+                    title: 'Câu Chuyện Của Chúng Tôi - VERILYS',
+                    content: `
+                        <h1>Câu Chuyện VERILYS</h1>
+                        <p>VERILYS được thành lập từ một tầm nhìn đơn giản: Mang đến nguồn nước tinh khiết an toàn nhất cho mọi gia đình Việt.</p>
+                        <h2>Hành Trình 13 Năm</h2>
+                        <p>Từ một nhà máy nhỏ với 10 nhân viên, VERILYS đã phát triển thành thương hiệu hàng đầu với 500.000+ khách hàng tin dùng.</p>
+                    `
+                },
+                'production-process.html': {
+                    title: 'Quy Trình Sản Xuất - VERILYS',
+                    content: `
+                        <h1>Quy Trình Sản Xuất 9 Bước</h1>
+                        <p>Khám phá quy trình sản xuất khép kín đạt chuẩn quốc tế của VERILYS.</p>
+                        <h2>Công Nghệ Tiên Tiến</h2>
+                        <p>Ứng dụng công nghệ lọc RO 9 bước với hệ thống kiểm soát chất lượng tự động hóa.</p>
+                    `
+                }
+                // Thêm các trang khác tại đây
+            };
+            
+            // Lưu trữ dữ liệu để sử dụng nếu cần
+            localStorage.setItem('verilysPages', JSON.stringify(pages));
+        }
+        
+        // ========== THAY ĐỔI ẢNH LOGO VÀ BÌA (GỌI HÀM NÀY KHI CÓ ẢNH THỰC TẾ) ==========
+        function loadRealImages() {
+            // Thay đổi logo trong header
+            changeLogoImage('logo-verilys-transparent.png', 'logo-verilys-large.png');
+            
+            // Thay đổi ảnh bìa
+            changeBackgroundImage('hero-background.jpg');
+        }
+        
+        // Gọi hàm này khi bạn có ảnh thực tế
+        // loadRealImages();
+    </script>
+</body>
+</html>
